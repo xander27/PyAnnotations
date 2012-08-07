@@ -29,9 +29,7 @@ Usage
 
     @Positive
     def test(x):
-    print x
-
-
+        print x
 
     print Positive.get_annotated()
 [ &lt; function g at 0x9dc3aac &gt; , &lt; function test at 0x9dcc87c &gt; ]
