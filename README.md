@@ -37,7 +37,12 @@ Usage
     get_annotaions(g)
 [\_\_main__.Positive]
 
-Note
+Notice
+------
+`get_annotated()` return function __without decorators__. You can undecorate (include not inherited from `Annotaion`
+class decorators) by `get_undecorated(func)` method
+
+P.S.
 ----
 This is one of the first things I wrote in Python. You are wellcome with any suggestion, comments and bugreports.
 Also it's my first project on GitHUb
