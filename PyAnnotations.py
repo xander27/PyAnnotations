@@ -4,7 +4,7 @@ def get_undecorated(func):
         func = func._Annotation__func
     return func
 
-def get_annotations(func):
+def get_annotations(func, all):
     """
     Get list of annotations for current object
     """

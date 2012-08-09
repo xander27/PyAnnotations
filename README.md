@@ -39,7 +39,7 @@ Usage
 
 Notice
 ------
-`get_annotated()` return function __without decorators__. You can undecorate (include not inherited from `Annotaion`
+`get_annotated()` return function __without decorators__. You can undecorate (include only inherited from `Annotaion`
 class decorators) by `get_undecorated(func)` method
 
 P.S.
