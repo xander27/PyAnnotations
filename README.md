@@ -17,26 +17,26 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 Usage
 -----
+```python
+from PyAnnotations import Annotation, get_annotaions
 
-    from PyAnnotations import Annotation, get_annotaions
+class Positive(Annotation):
+    pass
 
-    class Positive(Annotation):
-        pass
+@Positive
+def g(t):
+    pass
 
-    @Positive
-    def g(t):
-        pass
+@Positive
+def test(x):
+    print x
 
-    @Positive
-    def test(x):
-        print x
+print Positive.get_annotated()
+[ < function g at 0x9dc3aac &gt; , &lt; function test at 0x9dcc87c > ]
 
-    print Positive.get_annotated()
-[ &lt; function g at 0x9dc3aac &gt; , &lt; function test at 0x9dcc87c &gt; ]
-
-    get_annotaions(g)
-[\_\_main__.Positive]
-
+get_annotaions(g)
+[__main__.Positive]
+```
 Notice
 ------
 `get_annotated()` return function __without decorators__. You can undecorate (include only inherited from `Annotaion`
